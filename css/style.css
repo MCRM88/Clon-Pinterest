@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden
+}
+#main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*---------header---------*/
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+}
+#navbar-pinterest{
+    padding: 0px 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo-container{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pinterest-icon{
+    border-radius: 100%;
+    height: 40px;
+    padding: 5px;
+}
+#pinterest-icon:hover{
+    height: 40px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+
+#nav1{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1{
+    padding: 15px 17px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+#selected-item{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+form{
+    width: 70%;
+}
+#search{
+    margin: 10px;
+    padding: 5px;
+    border: solid 0.5px #b1b2b3;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+#search:hover{
+    box-shadow: 0px 1px 3px  #3C4043;
+}
+#searching{
+    width: 15px;
+    height: 15px;
+    padding: 0px 10px;
+}
+#search input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(235, 235, 235);
+}
+.img-container{
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#notifications{
+    height: 25px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+#message{
+    height: 25px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+#flecha-container{
+    width: 10px;
+    height: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#flecha{
+    border-radius: 100%;
+    height: 25px;
+}
+#profile-img{
+    height: 25px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+#notifications:hover{
+    height: 25px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: rgb(235, 235, 235);
+}
+#message:hover{
+    height: 25px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: rgb(235, 235, 235);
+}
+#profile-img:hover{
+    height: 25px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+#flecha:hover{
+    border-radius: 100%;
+    height: 25px;
+    background-color: rgb(235, 235, 235);
+}
+/*---------header---------*/
+
+
+/*---------main---------*/
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+margin-top: 80px;
+}
+#content{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.colum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+.card-container{
+    margin: 10px ;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-image{
+    width: 230px;
+    border-radius: 20px;
+    filter: brightness(95%);
+}
+/*---------card-hover---------*/
+.card-hover{
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    justify-content: space-between;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+
+}
+.card-container:hover .card-hover{
+    z-index: 100;
+    opacity: 2;
+}
+.card-container:hover .card-image{
+    filter: brightness(70%);
+}
+
+.down{
+    z-index: 200;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    gap: 10px;
+}
+
+.save {
+    color: #fff;
+    background-color: rgb(230,1,34); 
+    border-radius: 60px;
+    padding: 10px;
+    align-self: center;
+    padding: 15px 17px;
+    font-weight: 600;
+}
+.save:hover {
+    background-color: rgb(136, 0, 20); 
+}
+.down img{
+    z-index: 201;
+    height: 25px;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.down img:hover{
+    opacity: 1;
+}
+/*---------card-hover---------*/
+/*---------main---------*/
