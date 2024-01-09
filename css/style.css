@@ -7,7 +7,7 @@ body{
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 #main-container{
     width: 100%;
@@ -96,7 +96,7 @@ form{
 }
 #search input{
     border: none;
-    width: 100%;
+    width: 92%;
     padding: 10px;
     font-size: 14px;
     background-color: rgb(235, 235, 235);
@@ -173,10 +173,11 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-margin-top: 80px;
+    margin-top: 80px;
 }
 #content{
-    width: 95%;
+    margin-right: 11px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -265,3 +266,91 @@ margin-top: 80px;
 }
 /*---------card-hover---------*/
 /*---------main---------*/
+
+
+/*---------media queries---------*/
+@media screen and (max-width:1024px) {
+
+}
+
+
+
+/*cambio del inicio*/
+@media screen and (max-width:850px) {
+
+    #nav1{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text1{
+        padding: 15px 17px;
+        border-radius: 60px;
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+    }
+    .text1:nth-child(2),
+    .text1:nth-child(3) {
+        display: none;
+    }
+
+    #selected-item{
+        color: black;
+        background-color: rgb(255, 255, 255);
+    }
+    #selected-item:hover{
+        background-color: rgb(235, 235, 235);
+
+    }
+    
+}
+
+
+
+/*cambio del buscador*/
+@media screen and (max-width:600px) {
+
+    form{display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+    #search{
+        border: none;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color:#fff;
+        width: 35px;
+        height: 35px;
+    }
+    #search:hover{
+        background-color: rgb(235, 235, 235);
+        box-shadow: none;
+    }
+    #searching{
+        width: 15px;
+        height: 15px;
+
+    }
+    #search input{
+        border: none;
+        width: 0%;
+        padding: 0px;
+        font-size: 14px;
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+
+@media screen and (max-width:320px) {
+
+    
+}
